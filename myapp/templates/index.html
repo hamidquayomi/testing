@@ -1,0 +1,14 @@
+{% load static %}
+ <title>De boodschappen winkel</title>
+<h3> Boodschappen_Lijst </h3>
+<body style="background-color:LightSkyBlue;">
+<img src="{% static 'fatcat.jpeg' %}" width="400" height="300">
+<img src="{% static 'grocery.jpg' %}" width="400" height="300">
+<hr>
+<form action="" method="post">
+    {% csrf_token %}
+    {{form}}
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+<hr>
+<img src="{% static 'remu.jpg' %}" width="300" height="300">
